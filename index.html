@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body class="bg-lightgray">
+    <section id="page">
+      <dialog data-modal>
+        <form action="/app.js">
+          <fieldset>
+            <label for="book-name">Book Title</label>
+            <input id="title" type="text" placeholder="e.g. The Hobbit" required />
+          </fieldset>
+          <fieldset>
+            <label for="book-author">Author</label>
+            <input id="author" type="text" placeholder="e.g. John Doe" required />
+          </fieldset>
+          <fieldset>
+            <label for="book-pages">Amount of pages</label>
+            <input id="pages" type="number" required />
+          </fieldset>
+          <fieldset>
+            <label for="read-status">Completed?</label>
+            <input id="read-status" type="checkbox" name="read-status" id="read-status" />
+          </fieldset>
+          <button class="create-book-btn" type="submit">Create new book</button>
+          <button class="cancel-btn" type="button">Cancel</button>
+        </form>
+      </dialog>
+      <header class="flex align-center bg-white box-shadow">
+        <h2 class="my-1 fs-700">Librurry</h2>
+        <div class="wrapper new-book-btn ml-5 cursor-pointer">
+          <button>NEW BOOK +</button>
+        </div>
+        </div>
+      </header>
+      <div class="library-grid-container grid grid-auto-fill-cols gap-2 p-2 m-auto"></div>
+    </section>
+  </body>
+</html>
